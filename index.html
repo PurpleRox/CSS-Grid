@@ -8,8 +8,8 @@
         #container{
             display: grid;
             background: lightgreen;
-            grid-template-columns: minmax(160px, 200px) 1fr 2fr;
-            grid-template-rows: repeat(3, 150px);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-gap: 10px;
         }
         
@@ -18,17 +18,41 @@
             padding: 30px;
         }
 
+        .item1{
+            background: lightblue;
+            /* grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5; */
+            
+            /* grid-row: 2/4;
+            grid-column: 3/5; */
+
+            /* NOTE grid-area is row then column */
+            grid-area: 2/3/4/5;
+        }
+
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="item">Item 1</div>
+        <div class="item1">Item 1</div>
         <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error soluta fugit autem. Quas non laborum facilis omnis, quidem placeat illo aliquam possimus, ex dolore quos fuga beatae voluptatum rerum.</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
         <div class="item">Item 5</div>
         <div class="item">Item 6</div>
         <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
 </html>
